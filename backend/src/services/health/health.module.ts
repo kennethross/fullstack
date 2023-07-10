@@ -5,5 +5,6 @@ import { DbModule } from '../db/db.module';
 @Module({
   providers: [HealthService],
   imports: [DbModule],
+  exports: [HealthService],
 })
 export class HealthModule {}
