@@ -13,7 +13,7 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get() 
+  @Get('health') 
   getHealth(): Promise<string> {
     return this.healthService.checkHealth();
   }
